@@ -1,0 +1,5 @@
+<form action="{% url 'detail'%}" method="post">
+    {% csrf_token %}
+    <input id="choice{{forloop.counter}}" type="text" name="choice" value=""/>
+    <input type="submit" value="OK" />
+</form>
